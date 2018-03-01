@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<ui:composition template="/paginas/master.xhtml">	
+		<ui:define name="containerPrincipal">
+			<!-- Main jumbotron for a primary marketing message or call to action -->
+	    	<div class="jumbotron">
+	      		<div class="container">
+   					<h:graphicImage alt="91x135" library="img/filmes" name="filme_#{sessoesBean.filmeEscolhido.id}.jpg" style="width: 91px; height: 135px;" styleClass="img-thumbnail" />					
+       				<h3>#{sessoesBean.filmeEscolhido}</h3>
+	        		<h:commandLink action="principal" styleClass="btn btn-primary" value="Voltar" />    		
+	      		</div>
+	    	</div>	    	  
+		</ui:define>
+		
+		<ui:define name="containerSecondary">
+			<h3>Sessões Disponíveis:</h3>
+			
+			<br/>
+			
+			<div class="panel-group" id="accordion#{sessoesBean.filmeEscolhido.id}">
+				<ui:repeat var="sessao" value="#{sessoesBean.filmeEscolhido.sessoes}">										
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion#{sessao.id}" href="#collapse#{sessao.id}">
+									#{sessao.sala} - 
+									<h:outputText value="#{sessao.inicio.time}">
+										<f:convertDateTime type="time" pattern="HH:mm" />
+									</h:outputText>
+       								- Ingresso: 
+       								<h:outputText value="#{sessao.precoIngresso}">
+       									<f:convertNumber type="currency" />
+       								</h:outputText>
+     							 </a>
+   							</h4>
+ 						</div>
+ 						<div id="collapse#{sessao.id}" class="panel-collapse collapse">
+   							<div class="panel-body">	        										
+								<ui:repeat value="#{sessao.assentos}" var="assento">									
+									<h:graphicImage alt="32x32" library="img" name="pessoa_azul.png" rendered="#{assento.ocupado}" style="width: 32px; height: 32px;" styleClass="img-thumbnail" />
+									
+									<h:commandLink action="pagamento" rendered="#{not assento.ocupado}">							
+										<h:graphicImage alt="32x32" library="img" name="pessoa_branca.png" style="width: 32px; height: 32px;" styleClass="img-thumbnail" />
+										<f:setPropertyActionListener target="#{pagamentoBean.assentoEscolhido}" value="#{assento}" />
+										<f:setPropertyActionListener target="#{pagamentoBean.sessaoEscolhida}" value="#{sessao}" />
+									</h:commandLink>
+								</ui:repeat>
+								<div class="row"></div>     										
+								<div class="row">
+									<div class="col-lg-2"></div>  										
+									<div class="col-lg-8">
+										<h:graphicImage library="img" name="tela.png" class="img-thumbnail" alt="32x32" style="width: 512px; height: 32px;" />
+									</div>
+									<div class="col-lg-2"></div>
+								</div>
+							</div>
+ 						</div>
+					</div>
+				</ui:repeat>
+							
+				<div class="alert alert-warning" style="display: #{empty sessoesBean.filmeEscolhido.sessoes ? '' : 'none'}">
+					<p>Sentimos muito, mas não temos nenhuma sessão deste filme no momento. :( </p>
+				</div>									
+			</div>	  		
+		</ui:define>
+	</ui:composition>
+</html>

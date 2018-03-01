@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<ui:composition template="/paginas/manutencao/inicio.xhtml">		
+		<ui:define name="containerSecondary">			
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Abertura de Caixa</h3>
+				</div>
+				<div class="panel-body">					
+					<table class="table table-hover">
+			        	<thead>
+				          	<tr>
+					            <th>Cédulas / Moedas</th>
+					            <th>Quantidade Máquina</th>
+					            <th>Quantidade a Adicionar</th>
+				          	</tr>
+			        	</thead>
+			        	<tbody>
+				        	<tr class="warning">
+				            	<td>
+				            		<h:graphicImage alt="144x73" library="img/dinheiro" name="cedula_50_reais.png" style="width: 144px; height: 73px;" styleClass="img-thumbnail" />
+				            	</td>
+				            	<td>
+				            		<h:inputText disabled="true" maxlength="2" size="5" value="#{aberturaCaixaBean.maquina.qtdCedulas50}" />
+				            	</td>
+				            	<td>
+				            		<h:inputText converterMessage="Quantidade de cédulas de R$ 50,00 inválida" maxlength="2" size="5" value="#{aberturaCaixaBean.dinheiro.qtdCedulas50}" validatorMessage="Quantidade de cédulas de R$ 50,00 inválida">
+										<f:validateLongRange minimum="0" maximum="99" />
+									</h:inputText>
+				            	</td>
+				          	</tr>
+				          	<tr>
+				            	<td>
+				            		<h:graphicImage alt="144x73" library="img/dinheiro" name="cedula_10_reais.png" style="width: 144px; height: 73px;" styleClass="img-thumbnail" />
+				            	</td>
+				            	<td>
+				            		<h:inputText disabled="true" maxlength="2" size="5" value="#{aberturaCaixaBean.maquina.qtdCedulas10}" />
+				            	</td>
+				            	<td>
+				            		<h:inputText converterMessage="Quantidade de cédulas de R$ 10,00 inválida" maxlength="2" size="5" value="#{aberturaCaixaBean.dinheiro.qtdCedulas10}" validatorMessage="Quantidade de cédulas de R$ 10,00 inválida">
+										<f:validateLongRange minimum="0" maximum="99" />
+									</h:inputText>
+				            	</td>
+				          	</tr>
+				          	<tr class="warning">
+				            	<td>
+				            		<h:graphicImage alt="144x73" library="img/dinheiro" name="cedula_5_reais.png" style="width: 144px; height: 73px;" styleClass="img-thumbnail" />
+				            	</td>
+				            	<td>
+				            		<h:inputText disabled="true" maxlength="2" size="5" value="#{aberturaCaixaBean.maquina.qtdCedulas5}" />
+				            	</td>
+				            	<td>
+				            		<h:inputText converterMessage="Quantidade de cédulas de R$ 5,00 inválida" maxlength="2" size="5" value="#{aberturaCaixaBean.dinheiro.qtdCedulas5}" validatorMessage="Quantidade de cédulas de R$ 5,00 inválida">
+										<f:validateLongRange minimum="0" maximum="99" />
+									</h:inputText>
+				            	</td>
+				          	</tr>
+				          	<tr>
+				          		<td>
+				          			<h:graphicImage alt="58x73" library="img/dinheiro/" name="moeda_1_real.png" style="width: 58px; height: 73px;" styleClass="img-thumbnail" />
+				          		</td>
+				          		<td>
+				          			<h:inputText disabled="true" maxlength="2" size="5" value="#{aberturaCaixaBean.maquina.qtdMoedas1Real}" />
+				          		</td>
+				          		<td>
+				          			<h:inputText converterMessage="Quantidade de moedas de R$ 1,00 inválida" maxlength="2" size="5" value="#{aberturaCaixaBean.dinheiro.qtdMoedas1Real}" validatorMessage="Quantidade de moedas de R$ 1,00 inválida">
+										<f:validateLongRange minimum="0" maximum="99" />
+									</h:inputText>
+				          		</td>
+				          	</tr>
+							<tr class="warning">
+				          		<td>
+				          			<h:graphicImage alt="73x73" library="img/dinheiro" name="moeda_50_centavos.gif" style="width: 73px; height: 73px;" styleClass="img-thumbnail" />
+				          		</td>
+				          		<td>
+				          			<h:inputText disabled="true" maxlength="2" size="5" value="#{aberturaCaixaBean.maquina.qtdMoedas50Centavos}" />
+				          		</td>
+				          		<td>
+				          			<h:inputText converterMessage="Quantidade de moedas de R$ 0,50 inválida" maxlength="2" size="5" value="#{aberturaCaixaBean.dinheiro.qtdMoedas50Centavos}" validatorMessage="Quantidade de moedas de R$ 0,50 inválida">
+										<f:validateLongRange minimum="0" maximum="99" />
+									</h:inputText>
+				          		</td>
+				          	</tr>
+			        	</tbody>
+			        	<tfoot>
+			        		<tr class="success">
+			        			<td>
+			        				<b>Total:</b>
+			        			</td>
+			        			<td>
+			        				<b>
+				        				<h:outputText value="#{aberturaCaixaBean.maquina.totalEmReais}">
+	 										<f:convertNumber type="currency" />
+	 									</h:outputText>
+	 								</b>
+			        			</td>
+			        			<td>
+			        			</td>
+			        		</tr>
+			        	</tfoot>
+			      	</table>
+			      	
+			      	<div class="row">
+						<div class="col-lg-9">
+							<h:commandLink action="#{aberturaCaixaBean.abrirCaixa}" styleClass="btn btn-primary" value="Salvar" />
+						</div>
+					</div>			
+				</div>					
+			</div>
+		</ui:define>
+	</ui:composition>
+</html>

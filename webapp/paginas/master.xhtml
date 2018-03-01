@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<h:head>
+    	<meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <meta name="description" content="" />
+	    <meta name="author" content="" />
+	    
+	    <link rel="shortcut icon" href="img/cinema.png" />
+
+		<style>
+			.row-grid {
+				margin-bottom: 15px;				
+			}
+			
+			.column-grid {
+				margin-left: 15px;
+			}
+		</style>
+
+    	<title>Cinema - Assista Agora!</title>
+
+    	<!-- Bootstrap core CSS -->
+    	<h:outputStylesheet library="bootstrap/dist/css" name="bootstrap.css" />
+
+    	<!-- Custom styles for this template -->
+    	<h:outputStylesheet library="css" name="jumbotron.css" />
+  	</h:head>
+
+  	<h:body>  		
+    	<div class="navbar navbar-inverse navbar-fixed-top">
+      		<div class="container">
+        		<div class="navbar-header">
+          			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</button>
+          			<h:outputLink styleClass="navbar-brand" value="/ProjetoSoftware/index.jsp">Cinema</h:outputLink>
+        		</div>
+        		<div class="navbar-collapse collapse">
+          			<h:form class="navbar-form navbar-right">
+            			<div class="form-group">
+              				<input type="text" name="usuario" id="usuario" placeholder="Usuário" class="form-control" />
+            			</div>
+		            	<div class="form-group">
+		              		<input type="password" name="senha" id="senha" placeholder="Senha" class="form-control" />
+		            	</div>
+            			
+            			<div class="form-group">
+            				<h:outputLink name="acessoManutencao" id="acessoManutencao" styleClass="btn btn-success" value="/ProjetoSoftware/paginas/manutencao/inicio.jsf">Manutenção</h:outputLink>
+            			</div>
+          			</h:form>
+        		</div>
+      		</div>
+    	</div>
+	    	
+		<h:form id="formCinema">
+			<ui:insert name="containerPrincipal"></ui:insert>
+			
+	    	<div class="container">
+	    		<ui:insert name="containerSecondary"></ui:insert>
+	    		      		
+		      	<hr/>
+		  		<footer>
+		    		<p>&copy; Cinema 2013</p>
+		  		</footer>
+			</div>
+		</h:form>
+		
+    	<!-- Bootstrap core JavaScript ================================================== -->
+    	<!-- Placed at the end of the document so the pages load faster -->
+    	
+    	<h:outputScript library="bootstrap/assets/js" name="jquery.js" />
+    	<h:outputScript library="bootstrap/dist/js" name="bootstrap.min.js" />
+    	
+	</h:body>
+</html>

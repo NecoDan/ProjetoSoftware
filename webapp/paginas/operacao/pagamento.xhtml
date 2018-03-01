@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<ui:composition template="/paginas/master.xhtml">	
+		<ui:define name="containerPrincipal">
+	    	<div class="jumbotron">
+	      		<div class="container">
+   					<h:graphicImage alt="91x135" library="img/filmes" name="filme_#{pagamentoBean.sessaoEscolhida.filme.id}.jpg" style="width: 91px; height: 135px;" styleClass="img-thumbnail" />					
+       				<h3>#{pagamentoBean.sessaoEscolhida.filme}</h3>
+       				<h4>Valor do Ingresso: 
+						<h:outputText value="#{pagamentoBean.sessaoEscolhida.precoIngresso}">
+							<f:convertNumber type="currency" />
+						</h:outputText>
+					</h4>
+	        		<h:commandLink action="sessoes" immediate="true" styleClass="btn btn-primary" value="Voltar" />
+	      		</div>
+	    	</div>	    	  
+		</ui:define>
+		
+		<ui:define name="containerSecondary">
+			<h3>Formas de Pagamentos:</h3>
+			
+			<br/>
+			
+			<div class="list-group">
+				<ui:repeat value="#{pagamentoBean.tiposPagamentos}" var="tipo">
+					<h:commandLink action="#{pagamentoBean.pagar}" styleClass="list-group-item">
+						<h:graphicImage alt="64x64" library="img/tipo_pagamento" name="tipo_pagamento_#{tipo.id}.png" style="width: 64px; height: 64px;" styleClass="img-thumbnail" />
+						#{tipo.descricao}
+						<f:setPropertyActionListener target="#{pagamentoBean.tipoPagamentoEscolhido}" value="#{tipo}" />
+					</h:commandLink>
+				</ui:repeat>
+			</div>
+			
+		</ui:define>
+	</ui:composition>
+</html>

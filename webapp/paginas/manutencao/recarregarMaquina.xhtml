@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<ui:composition template="/paginas/manutencao/inicio.xhtml">		
+		<ui:define name="containerSecondary">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Recarregar Impressora</h3>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-lg-3">
+							Quantidade de Impressões Restantes:
+						</div>
+						<div class="col-lg-9">
+							<h:inputText disabled="true" maxlength="5" size="3" value="#{recarregarMaquinaBean.maquina.qtdImpressoes}" />
+						</div>
+					</div>
+					
+					<br />
+					
+					<div class="row">
+						<div class="col-lg-3">
+							Adicionar Quantidade de Impressões:
+						</div>
+						<div class="col-lg-9">
+							<h:inputText converterMessage="Quantidade de impressões inválida" maxlength="5" size="3" value="#{recarregarMaquinaBean.qtdImpressoes}" validatorMessage="Quantidade de impressões inválida">
+								<f:validateLongRange minimum="0" maximum="99999" />
+							</h:inputText>
+						</div>
+					</div>
+					
+					<br />
+					
+					<div class="row">
+						<div class="col-lg-9">
+							<h:commandLink action="#{recarregarMaquinaBean.recarregar}" styleClass="btn btn-primary" value="Recarregar" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</ui:define>
+	</ui:composition>
+</html>

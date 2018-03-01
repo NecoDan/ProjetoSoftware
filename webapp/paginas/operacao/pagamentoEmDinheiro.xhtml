@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<ui:composition template="/paginas/master.xhtml">	
+		<ui:define name="containerPrincipal">
+	    	<div class="jumbotron">
+	      		<div class="container">
+   					<h:graphicImage alt="91x135" library="img/filmes" name="filme_#{pagamentoBean.sessaoEscolhida.filme.id}.jpg" style="width: 91px; height: 135px;" styleClass="img-thumbnail" />					
+       				<h3>#{pagamentoBean.sessaoEscolhida.filme}</h3>
+       				<h4>Valor do Ingresso: 
+						<h:outputText value="#{pagamentoBean.sessaoEscolhida.precoIngresso}">
+							<f:convertNumber type="currency" />
+						</h:outputText>
+					</h4>
+	        		<h:commandLink action="pagamento" immediate="true" styleClass="btn btn-primary" value="Voltar" />
+	      		</div>
+	    	</div>	    	  
+		</ui:define>
+		
+		<ui:define name="containerSecondary">			
+			<h4>Cédulas / Moedas Disponíveis:</h4>
+			
+			<br />
+			
+			<c:if test="#{facesContext.maximumSeverity.ordinal == 2}">
+        		<div class="alert alert-danger">
+        			<h:messages />
+        		</div>
+       		</c:if>
+			
+			<div class="row">
+				<div class="col-md-1">
+					<h:inputText converterMessage="Quantidade de cédulas de R$ 50,00 inválida" maxlength="1" size="1" value="#{pagamentoBean.dinheiro.qtdCedulas50}">
+						<f:validateLongRange minimum="0" maximum="9" />
+					</h:inputText>
+				</div>
+				<div class="col-md-2">	
+					<h:graphicImage alt="144x73" library="img/dinheiro" name="cedula_50_reais.png" style="width: 144px; height: 73px;" styleClass="img-thumbnail" />
+				</div>
+ 				<div class="col-md-1">
+					<h:inputText converterMessage="Quantidade de cédulas de R$ 10,00 inválida" maxlength="1" size="1" value="#{pagamentoBean.dinheiro.qtdCedulas10}">
+						<f:validateLongRange minimum="0" maximum="9" />
+					</h:inputText>
+				</div>
+				<div class="col-md-2">
+					<h:graphicImage alt="144x73" library="img/dinheiro" name="cedula_10_reais.png" style="width: 144px; height: 73px;" styleClass="img-thumbnail" />
+				</div>
+				<div class="col-md-1">
+					<h:inputText converterMessage="Quantidade de cédulas de R$ 5,00 inválida" maxlength="1" size="1" value="#{pagamentoBean.dinheiro.qtdCedulas5}">
+						<f:validateLongRange minimum="0" maximum="9" />
+					</h:inputText>
+				</div>
+				<div class="col-md-2">
+					<h:graphicImage alt="144x73" library="img/dinheiro" name="cedula_5_reais.png" style="width: 144px; height: 73px;" styleClass="img-thumbnail" />
+				</div>			
+			</div>
+			
+			<br />
+			
+			<div class="row">
+				<div class="col-md-1">
+					<h:inputText converterMessage="Quantidade de moedas de R$ 1,00 inválida" maxlength="2" size="1" value="#{pagamentoBean.dinheiro.qtdMoedas1Real}">
+						<f:validateLongRange minimum="0" maximum="99" />
+					</h:inputText>
+				</div>
+				<div class="col-md-2">
+					<h:graphicImage alt="58x73" library="img/dinheiro" name="moeda_1_real.png" style="width: 58px; height: 73px;" styleClass="img-thumbnail" />
+				</div>
+				<div class="col-md-1">
+					<h:inputText converterMessage="Quantidade de moedas de R$ 0,50 inválida" maxlength="2" size="1" value="#{pagamentoBean.dinheiro.qtdMoedas50Centavos}">
+						<f:validateLongRange minimum="0" maximum="99" />
+					</h:inputText>
+				</div>
+				<div class="col-md-2">
+					<h:graphicImage alt="73x73" library="img/dinheiro" name="moeda_50_centavos.gif" style="width: 73px; height: 73px;" styleClass="img-thumbnail" />
+				</div>
+			</div>
+			
+			<br/>
+			
+			<div class="row">
+				<div class="col-md-2">
+					<h:commandButton action="#{pagamentoBean.pagarEmDinheiro}" styleClass="btn btn-success" value="Pagar" />
+				</div>
+			</div>
+		</ui:define>
+	</ui:composition>
+</html>

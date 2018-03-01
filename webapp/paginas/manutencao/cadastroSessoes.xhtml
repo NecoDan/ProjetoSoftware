@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<ui:composition template="/paginas/manutencao/inicio.xhtml">		
+		<ui:define name="containerSecondary">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Cadastro de Sessões</h3>
+				</div>			
+								
+				<div class="panel-body">
+				<h:panelGroup id="painelSessao">
+					<div class="row row-grid">
+						<div class="col-lg-1 column-grid">
+							Nome:
+						</div>
+						<div class="col-lg-5 column-grid">
+							<h:inputText disabled="true" label="Nome" maxlength="256" size="70" value="#{cadastroSessoesBean.filme.nome}" />
+						</div>
+						<div class="col-lg-1 column-grid">
+							Sala:
+						</div>
+						<div class="col-lg-1 column-grid">
+							<h:selectOneMenu value="#{cadastroSessoesBean.sessao.sala.id}">
+								<f:selectItem itemLabel="Sala 1" itemValue="1" />
+								<f:selectItem itemLabel="Sala 2" itemValue="2" />
+								<f:selectItem itemLabel="Sala 3" itemValue="3" />
+							</h:selectOneMenu>
+						</div>
+					</div>
+					
+					<div class="row row-grid">					
+						<div class="col-lg-1 column-grid">
+							Início:
+						</div>
+						<div class="col-lg-2 column-grid">
+							<h:inputText label="Início" maxlength="16" size="15" value="#{cadastroSessoesBean.sessao.inicio}">
+								<f:convertDateTime pattern="dd/MM/yyyy HH:mm" type="both" />
+							</h:inputText>
+						</div>
+						<div class="col-lg-1 column-grid">
+							Fim:
+						</div>
+						<div class="col-lg-2 column-grid">
+							<h:inputText label="Fim" maxlength="16" size="15" value="#{cadastroSessoesBean.sessao.fim}">
+								<f:convertDateTime pattern="dd/MM/yyyy HH:mm" />
+							</h:inputText>
+						</div>
+						<div class="col-lg-2 column-grid">
+							Preço Ingresso:
+						</div>
+						<div class="col-lg-1 column-grid">
+							<h:inputText label="Preço Ingresso" maxlength="10" size="10" value="#{cadastroSessoesBean.sessao.precoIngresso}">
+								<f:convertNumber type="number" />
+							</h:inputText>
+						</div>
+					</div>
+					
+					<br />
+					
+					<div class="row show-grid">
+						<div class="col-lg-1">
+							<h:commandLink action="cadastroFilmes" immediate="true" styleClass="btn btn-primary" value="Voltar" />
+						</div>
+						<div class="col-lg-1">
+							<h:commandLink action="#{cadastroSessoesBean.novo}" styleClass="btn btn-primary" value="Novo" />
+						</div>
+						<div class="col-lg-10">
+							<h:commandLink action="#{cadastroSessoesBean.salvar}" styleClass="btn btn-primary" value="Salvar" />
+						</div>
+					</div>
+					</h:panelGroup>
+				</div>
+			</div>
+			
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Sessões Cadastradas</h3>
+				</div>
+				
+				<div class="panel-body">
+					<table class="table table-hover">
+						<thead>
+				          	<tr>
+					            <th>Sala</th>
+					            <th>Início</th>
+					            <th>Fim</th>
+					            <th>Preço Ingresso</th>
+					            <th>Editar</th>
+				          	</tr>
+			        	</thead>
+			        	<tbody>
+			        		<ui:repeat value="#{cadastroSessoesBean.sessoesCadastradas}" var="sessao" varStatus="status">
+				        		<tr class="#{status.odd ? '' : 'warning'}">
+				        			<td>
+				        				<h:outputText value="#{sessao.sala.nome}" />
+				        			</td>
+				        			<td>
+				        				<h:outputText value="#{sessao.inicio.time}">
+											<f:convertDateTime type="time" pattern="dd/MM/yyyy HH:mm" />
+										</h:outputText>
+				        			</td>
+				        			<td>
+				        				<h:outputText value="#{sessao.fim.time}">
+											<f:convertDateTime type="time" pattern="dd/MM/yyyy HH:mm" />
+										</h:outputText>
+				        			</td>
+				        			<td>
+				        				<h:outputText value="#{sessao.precoIngresso}">
+				        					<f:convertNumber type="currency" />
+				        				</h:outputText>
+				        			</td>
+				        			<td>
+				        				<h:commandLink action="#{cadastroSessoesBean.editar}">
+        									<h:graphicImage alt="32x32" library="img" name="lapis.png" style="width: 32px; height: 32px;" />
+        									<f:setPropertyActionListener target="#{cadastroSessoesBean.sessao}" value="#{sessao}" />
+        								</h:commandLink>
+        							</td>
+				        		</tr>
+				        	</ui:repeat>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</ui:define>
+	</ui:composition>
+</html>

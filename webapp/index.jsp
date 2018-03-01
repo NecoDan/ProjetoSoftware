@@ -1,0 +1,1 @@
+<jsp:forward page="/paginas/operacao/principal.jsf" />

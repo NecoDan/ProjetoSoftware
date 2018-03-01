@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+		
+<hibernate-configuration>
+	<session-factory>
+	
+		<!--Configuracao do driver do banco de dados-->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		
+		<!--O dialeto usado pelo Hibernate para conversar com o banco-->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		<!--A URL de conexao ao banco de dados-->
+		<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/BDCINEMA</property>
+		
+		<!--Nome do usuario-->
+		<property name="hibernate.connection.username">danielsantos</property>
+		
+		<!--A senha de acesso ao banco de dados-->
+		<property name="hibernate.connection.password">m4st3r.r00t</property>
+		
+		<property name="hibernate.connection.autocommit">true</property>
+		
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">false</property>
+		
+		<mapping class="br.ufma.mestrado.computacao.ps.cinema.dominio.Assento" />
+		<mapping class="br.ufma.mestrado.computacao.ps.cinema.dominio.Filme" />
+		<mapping class="br.ufma.mestrado.computacao.ps.cinema.dominio.Usuario" />
+		<mapping class="br.ufma.mestrado.computacao.ps.cinema.dominio.Ingresso" />
+		<mapping class="br.ufma.mestrado.computacao.ps.cinema.dominio.Maquina" />
+		<mapping class="br.ufma.mestrado.computacao.ps.cinema.dominio.Pagamento" />
+		<mapping class="br.ufma.mestrado.computacao.ps.cinema.dominio.Sala" />
+		<mapping class="br.ufma.mestrado.computacao.ps.cinema.dominio.Sessao" />
+		<mapping class="br.ufma.mestrado.computacao.ps.cinema.dominio.TipoPagamento" />
+		
+	</session-factory>
+</hibernate-configuration>

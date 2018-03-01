@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<ui:composition template="/paginas/master.xhtml">	
+		<ui:define name="containerPrincipal">			
+	    	<div class="jumbotron">
+	      		<div class="container">
+	        		<h3>Bem Vindo ao Cinema!</h3>
+	        		<button type="button" class="btn btn-success">Em exibição</button>
+	      		</div>
+	    	</div>
+		</ui:define>
+		
+		<ui:define name="containerSecondary">
+			<ui:repeat value="#{principalBean.filmesEmExibicao}" var="filme" varStatus="varStatus">				
+				<div class="col-lg-4">
+					<h:commandLink action="sessoes">
+        				<h:graphicImage alt="91x135" library="img/filmes" name="filme_#{filme.id}.jpg" style="width: 91px; height: 135px;" styleClass="img-thumbnail" />
+        				<f:setPropertyActionListener target="#{sessoesBean.filmeEscolhido}" value="#{filme}" />
+        			</h:commandLink>
+          			<h3>#{filme}</h3>
+          			<p><b>Ano:</b> #{filme.ano}</p>
+          			<p><b>Duração:</b> #{filme.duracao} (min)</p>
+          			<p><b>Sinopse:</b> #{filme.sinopse} </p>
+					<p>
+						<b>Classificação:</b>
+						<h:graphicImage alt="32x32" library="img/classificacao" name="classificacao_#{filme.classificacao}.png" style="width: 32px; height: 32px;" styleClass="img-thumbnail" />
+					</p>
+          			<p>
+          				<h:commandLink action="sessoes" styleClass="btn btn-primary" value="Ver Sessões">
+          					<f:setPropertyActionListener target="#{sessoesBean.filmeEscolhido}" value="#{filme}" />
+          				</h:commandLink>
+          			</p>
+       			</div>
+			</ui:repeat>
+			
+			<div class="row"></div>			
+		</ui:define>
+	</ui:composition>
+</html>

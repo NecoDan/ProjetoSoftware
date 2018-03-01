@@ -1,0 +1,858 @@
+src/br/ufma/mestrado/computacao/ps/cinema/Main.java:7:	A Classname should have a minimum of five characters
+src/br/ufma/mestrado/computacao/ps/cinema/Main.java:7:	All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/br/ufma/mestrado/computacao/ps/cinema/Main.java:9:	Avoid really long methods.
+src/br/ufma/mestrado/computacao/ps/cinema/Main.java:9:	Parameter 'args' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/Main.java:12:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/Main.java:12:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/Main.java:34:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/Main.java:42:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/Main.java:61:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/Main.java:63:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/Main.java:109:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/FilmeDAO.java:17:	Parameter 'session' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/FilmeDAO.java:22:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dao/FilmeDAO.java:29:	Parameter 'data' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/FilmeDAO.java:30:	Local variable 'query' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/FilmeDAO.java:31:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/FilmeDAO.java:33:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/FilmeDAO.java:37:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dao/FilmeDAO.java:43:	Local variable 'criteria' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/FilmeDAO.java:44:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/GenericDAO.java:6:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dao/GenericDAO.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/dao/GenericDAO.java:16:	Parameter 'session' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/GenericDAO.java:26:	Parameter 'obj' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/GenericDAO.java:34:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dao/GenericDAO.java:36:	Parameter 'obj' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/IngressoDAO.java:12:	Parameter 'session' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/IngressoDAO.java:16:	Parameter 'assento' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/IngressoDAO.java:16:	Parameter 'sessao' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/IngressoDAO.java:17:	Local variable 'query' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/IngressoDAO.java:18:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/IngressoDAO.java:19:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/IngressoDAO.java:21:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/IngressoDAO.java:21:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/MaquinaDAO.java:9:	Parameter 'session' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/MaquinaDAO.java:13:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dao/MaquinaDAO.java:13:	Parameter 'id' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/PagamentoDAO.java:14:	Parameter 'session' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/PagamentoDAO.java:19:	Parameter 'dataFim' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/PagamentoDAO.java:19:	Parameter 'dataInicio' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/PagamentoDAO.java:20:	Local variable 'criteria' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/PagamentoDAO.java:23:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/PagamentoDAO.java:26:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SalaDAO.java:15:	Parameter 'session' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SalaDAO.java:26:	Local variable 'criteria' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SalaDAO.java:27:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SessaoDAO.java:17:	Parameter 'session' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SessaoDAO.java:21:	Comment is too large: Too many lines
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SessaoDAO.java:33:	Parameter 'data' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SessaoDAO.java:33:	Parameter 'filme' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SessaoDAO.java:34:	Local variable 'query' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SessaoDAO.java:36:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SessaoDAO.java:37:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SessaoDAO.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SessaoDAO.java:43:	Parameter 'filme' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SessaoDAO.java:44:	Local variable 'query' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SessaoDAO.java:46:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/SessaoDAO.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dao/TipoPagamentoDAO.java:11:	Parameter 'session' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dao/TipoPagamentoDAO.java:17:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:19:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:37:	Parameter 'assento' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:44:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:47:	Parameter 'obj' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:48:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:49:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:50:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:51:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:52:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:53:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:54:	Local variable 'other' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:55:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:56:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:62:	Avoid using final local variables, turn them into fields
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:63:	Found 'DD'-anomaly for variable 'result' (lines '63'-'64').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:68:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:74:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:74:	Parameter 'id' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:82:	Parameter 'numeroFileira' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:90:	Parameter 'ocupado' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:98:	Parameter 'posicaoFileira' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Assento.java:106:	Parameter 'sala' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:15:	Avoid excessively long variable names like qtdMoedas50Centavos
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:17:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:20:	Found 'DD'-anomaly for variable 'total' (lines '20'-'22').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:32:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:38:	Parameter 'qtdCedulas50' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:39:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:50:	Parameter 'qtdCedulas10' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:51:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:62:	Parameter 'qtdCedulas5' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:63:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:74:	Parameter 'qtdMoedas1Real' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:75:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:86:	Avoid excessively long variable names like qtdMoedas50Centavos
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:86:	Parameter 'qtdMoedas50Centavos' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Dinheiro.java:87:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:37:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:48:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:51:	Parameter 'obj' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:52:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:53:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:54:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:55:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:56:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:57:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:58:	Local variable 'other' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:59:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:60:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:66:	Avoid using final local variables, turn them into fields
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:67:	Found 'DD'-anomaly for variable 'result' (lines '67'-'68').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:73:	Local variable 'dataAtual' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:73:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:82:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:88:	Parameter 'ano' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:89:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:99:	Parameter 'classificacao' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:107:	Parameter 'duracao' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:108:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:119:	Parameter 'emCartazAte' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:127:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:127:	Parameter 'id' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:135:	Parameter 'nome' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:143:	Parameter 'sessoes' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Filme.java:151:	Parameter 'sinopse' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:25:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:38:	Parameter 'assento' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:38:	Parameter 'sessao' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:47:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:50:	Parameter 'obj' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:51:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:52:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:53:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:54:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:55:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:56:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:57:	Local variable 'other' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:58:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:59:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:65:	Avoid using final local variables, turn them into fields
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:66:	Found 'DD'-anomaly for variable 'result' (lines '66'-'67').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:71:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:77:	Parameter 'assento' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:85:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:85:	Parameter 'id' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:93:	Parameter 'preco' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Ingresso.java:101:	Parameter 'sessao' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:18:	The class 'Maquina' has a Cyclomatic Complexity of 2 (Highest = 13).
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:23:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:41:	Avoid excessively long variable names like qtdMoedas50Centavos
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:43:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:45:	Parameter 'dinheiro' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:54:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:54:	Avoid really long methods.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:54:	Parameter 'quantiaFornecida' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:54:	Parameter 'quantiaNecessaria' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:54:	The method 'colocarDinheiro' has a Cyclomatic Complexity of 13.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:54:	The method colocarDinheiro() has an NPath complexity of 487
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:56:	Found 'DU'-anomaly for variable 'dinheiroTrocado' (lines '56'-'154').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:56:	Local variable 'dinheiroTrocado' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:60:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:60:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:61:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:68:	Found 'DU'-anomaly for variable 'qtdCedulas50' (lines '68'-'154').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:68:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:68:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:70:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:81:	Dont create instances of already existing BigInteger and BigDecimal (ZERO, ONE, TEN)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:82:	Found 'DU'-anomaly for variable 'qtdCedulas10' (lines '82'-'154').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:82:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:82:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:84:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:96:	Found 'DU'-anomaly for variable 'qtdCedulas5' (lines '96'-'154').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:96:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:96:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:98:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:103:	Found 'DD'-anomaly for variable 'troco' (lines '103'-'107').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:111:	Dont create instances of already existing BigInteger and BigDecimal (ZERO, ONE, TEN)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:112:	Found 'DU'-anomaly for variable 'qtdMoedas1Real' (lines '112'-'154').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:112:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:112:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:114:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:125:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:126:	Avoid excessively long variable names like qtdMoedas50Centavos
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:126:	Found 'DU'-anomaly for variable 'qtdMoedas50Centavos' (lines '126'-'154').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:126:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:126:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:128:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:131:	Local variable 'valor' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:138:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:138:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:139:	Avoid throwing raw exception types.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:142:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:143:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:144:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:146:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:147:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:157:	Parameter 'obj' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:158:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:159:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:160:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:161:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:162:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:163:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:164:	Local variable 'other' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:165:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:166:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:172:	Avoid using final local variables, turn them into fields
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:173:	Found 'DD'-anomaly for variable 'result' (lines '173'-'174').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:178:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:180:	Avoid throwing raw exception types.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:190:	Avoid excessively long variable names like quantidadeImpressoes
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:190:	Parameter 'quantidadeImpressoes' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:191:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:198:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:198:	Parameter 'dinheiro' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:200:	Avoid throwing raw exception types.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:204:	Avoid throwing raw exception types.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:208:	Avoid throwing raw exception types.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:212:	Avoid throwing raw exception types.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:216:	Avoid throwing raw exception types.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:227:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:233:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:233:	Parameter 'id' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:241:	Parameter 'qtdCedulas5' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:249:	Parameter 'qtdCedulas10' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:257:	Parameter 'qtdCedulas50' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:265:	Parameter 'qtdImpressoes' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:273:	Avoid excessively long variable names like qtdMoedas50Centavos
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:273:	Parameter 'qtdMoedas50Centavos' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:281:	Parameter 'qtdMoedas1Real' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Maquina.java:286:	Found 'DD'-anomaly for variable 'total' (lines '286'-'288').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:26:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:47:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:50:	Parameter 'obj' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:51:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:52:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:53:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:54:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:55:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:56:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:57:	Local variable 'other' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:58:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:59:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:65:	Avoid using final local variables, turn them into fields
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:66:	Found 'DD'-anomaly for variable 'result' (lines '66'-'67').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:71:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:77:	Parameter 'data' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:85:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:85:	Parameter 'id' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:93:	Parameter 'ingresso' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:101:	Parameter 'numeroCartao' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:109:	Parameter 'tipo' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:117:	Parameter 'trocoEmDinheiro' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:129:	Parameter 'valorPago' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Pagamento.java:137:	Parameter 'valorTroco' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:17:	A Classname should have a minimum of five characters
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:25:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:31:	Avoid excessively long variable names like quantidadeAssentos
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:34:	Avoid excessively long variable names like quantidadeFileiras
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:36:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:38:	Document empty constructor
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:41:	Avoid excessively long variable names like quantidadeAssentos
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:41:	Avoid excessively long variable names like quantidadeFileiras
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:41:	Parameter 'nome' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:41:	Parameter 'quantidadeAssentos' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:41:	Parameter 'quantidadeFileiras' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:47:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:50:	Parameter 'obj' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:51:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:52:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:53:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:54:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:55:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:56:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:57:	Local variable 'other' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:58:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:59:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:65:	Avoid using final local variables, turn them into fields
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:66:	Found 'DD'-anomaly for variable 'result' (lines '66'-'67').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:76:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:82:	Parameter 'assentos' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:90:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:90:	Parameter 'id' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:98:	Parameter 'nome' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:106:	Avoid excessively long variable names like quantidadeAssentos
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:106:	Parameter 'quantidadeAssentos' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:114:	Avoid excessively long variable names like quantidadeFileiras
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sala.java:114:	Parameter 'quantidadeFileiras' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:36:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:49:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:52:	Parameter 'obj' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:53:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:54:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:55:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:56:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:57:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:58:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:59:	Local variable 'other' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:60:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:61:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:67:	Avoid using final local variables, turn them into fields
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:68:	Found 'DD'-anomaly for variable 'result' (lines '68'-'69').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:74:	Local variable 'dataAtual' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:74:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:78:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:84:	Parameter 'assentos' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:92:	Parameter 'filme' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:100:	Parameter 'fim' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:108:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:108:	Parameter 'id' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:116:	Parameter 'inicio' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:124:	Parameter 'precoIngresso' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:125:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/Sessao.java:136:	Parameter 'sala' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:14:	The field name indicates a constant but its modifiers do not
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:14:	Variables should start with a lowercase character, 'DINHEIRO' starts with uppercase character.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:15:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'CARTAO_CREDITO' is not final.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:15:	The field name indicates a constant but its modifiers do not
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:15:	Variables should start with a lowercase character, 'CARTAO_CREDITO' starts with uppercase character.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:16:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'CARTAO_DEBITO' is not final.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:16:	The field name indicates a constant but its modifiers do not
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:16:	Variables should start with a lowercase character, 'CARTAO_DEBITO' starts with uppercase character.
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:24:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:26:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:28:	Document empty constructor
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:31:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:31:	Parameter 'id' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:35:	Parameter 'descricao' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:39:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:39:	Parameter 'descricao' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:39:	Parameter 'id' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:44:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:47:	Parameter 'obj' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:48:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:49:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:50:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:51:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:52:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:53:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:54:	Local variable 'other' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:55:	Avoid using if statements without curly braces
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:56:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:62:	Avoid using final local variables, turn them into fields
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:63:	Found 'DD'-anomaly for variable 'result' (lines '63'-'64').
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:68:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:74:	Parameter 'descricao' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:82:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/dominio/TipoPagamento.java:82:	Parameter 'id' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:26:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:30:	Found 'UR'-anomaly for variable 'assento' (lines '30'-'38').
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:30:	Found 'UR'-anomaly for variable 'assento' (lines '30'-'44').
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:30:	Found 'UR'-anomaly for variable 'sessao' (lines '30'-'37').
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:30:	Parameter 'filme' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:31:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:31:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:32:	Found 'DU'-anomaly for variable 'ingressoDAO' (lines '32'-'49').
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:32:	Local variable 'ingressoDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:34:	Local variable 'sessao' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:35:	Avoid instantiating new objects inside loops
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:35:	Local variable 'assentos' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:37:	Local variable 'assento' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:37:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:38:	Avoid instantiating new objects inside loops
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:43:	Local variable 'assento' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:48:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:51:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:51:	Parameter 'ingresso' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:51:	Parameter 'maquina' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:51:	Parameter 'pagamento' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:52:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:52:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:53:	Local variable 'maquinaDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:54:	Local variable 'ingressoDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:55:	Local variable 'pagamentoDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:57:	Avoid variables with short names like tx
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:57:	Local variable 'tx' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:66:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:67:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:68:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:71:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:75:	Parameter 'cartao' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:75:	Parameter 'cartaoCredito' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:75:	Parameter 'ingresso' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:75:	Parameter 'maquina' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:76:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:77:	Local variable 'pagamento' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:89:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:89:	Parameter 'ingresso' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:89:	Parameter 'maquina' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:89:	Parameter 'valorPago' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:90:	Local variable 'pagamento' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:98:	Avoid using Literals in Conditional Statements
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:98:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:99:	Avoid throwing raw exception types.
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:102:	Local variable 'dinheiroTrocado' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:110:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:110:	Parameter 'id' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:111:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:111:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:112:	Local variable 'maquinaDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:113:	Local variable 'maquina' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:114:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:123:	Found 'UR'-anomaly for variable 'filme' (lines '123'-'134').
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:124:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:124:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:125:	Local variable 'filmeDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:126:	Found 'DU'-anomaly for variable 'sessaoDAO' (lines '126'-'142').
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:126:	Local variable 'sessaoDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:128:	Local variable 'hoje' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:129:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:131:	Local variable 'filmesEmExibicao' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:131:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:133:	Local variable 'filme' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:134:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:136:	System.out.print is used
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:139:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:145:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:145:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:146:	Local variable 'tipoPagamentoDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:147:	Local variable 'tipos' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocio.java:148:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:23:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:23:	Parameter 'dinheiro' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:23:	Parameter 'maquina' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:24:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:24:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:25:	Local variable 'maquinaDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:27:	Avoid variables with short names like tx
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:27:	Local variable 'tx' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:27:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:34:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:35:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:36:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:43:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:43:	Parameter 'maquina' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:43:	Parameter 'qtdImpressoes' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:44:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:44:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:45:	Local variable 'maquinaDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:47:	Avoid variables with short names like tx
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:47:	Local variable 'tx' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:55:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:56:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:59:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:63:	Avoid variables with short names like id
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:63:	Parameter 'id' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:64:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:64:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:65:	Local variable 'maquinaDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:66:	Local variable 'maquina' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:67:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:71:	Parameter 'dataFim' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:71:	Parameter 'dataInicio' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:72:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:72:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:73:	Local variable 'pagamentoDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:74:	Local variable 'pagamentos' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:80:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:80:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:81:	Local variable 'filmeDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:82:	Local variable 'filmes' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:88:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:88:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:89:	Local variable 'salaDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:90:	Local variable 'salas' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:91:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:95:	Parameter 'filme' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:96:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:96:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:97:	Local variable 'sessaoDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:98:	Local variable 'sessoes' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:99:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:103:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:103:	Parameter 'filme' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:105:	Avoid throwing raw exception types.
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:108:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:108:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:109:	Local variable 'filmeDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:111:	Avoid variables with short names like tx
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:111:	Local variable 'tx' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:111:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:116:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:117:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:118:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:121:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:125:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:125:	Parameter 'sessao' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:127:	Avoid throwing raw exception types.
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:130:	Local variable 'session' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:130:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:131:	Local variable 'sessaoDAO' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:133:	Avoid variables with short names like tx
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:133:	Local variable 'tx' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:133:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:138:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:139:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:140:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocio.java:143:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/util/HibernateUtil.java:10:	Avoid variables with short names like sf
+src/br/ufma/mestrado/computacao/ps/cinema/util/HibernateUtil.java:10:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/util/HibernateUtil.java:10:	Private field 'sf' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/util/HibernateUtil.java:16:	Local variable 'cfg' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/util/HibernateUtil.java:26:	Singleton is not thread safe
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/AberturaCaixaBean.java:16:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/AberturaCaixaBean.java:16:	Private field 'dinheiro' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/AberturaCaixaBean.java:18:	Avoid excessively long variable names like manutencacaoNegocio
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/AberturaCaixaBean.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/AberturaCaixaBean.java:18:	Private field 'manutencacaoNegocio' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/AberturaCaixaBean.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/AberturaCaixaBean.java:20:	Private field 'maquina' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/AberturaCaixaBean.java:35:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/AberturaCaixaBean.java:36:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/AberturaCaixaBean.java:46:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroFilmesBean.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroFilmesBean.java:21:	Avoid excessively long variable names like manutencacaoNegocio
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroFilmesBean.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroFilmesBean.java:21:	Private field 'manutencacaoNegocio' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroFilmesBean.java:25:	Overridable method 'novo' called during object construction
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroFilmesBean.java:29:	System.out.print is used
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroFilmesBean.java:34:	System.out.print is used
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroFilmesBean.java:47:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroFilmesBean.java:48:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroFilmesBean.java:58:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroFilmesBean.java:64:	Parameter 'filme' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:20:	Private field 'filme' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:22:	Private field 'salasCadastradas' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:26:	Avoid excessively long variable names like sessoesCadastradas
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:26:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:28:	Avoid excessively long variable names like manutencacaoNegocio
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:28:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:28:	Private field 'manutencacaoNegocio' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:33:	Local variable 'params' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:34:	Local variable 'idFilme' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:35:	Local variable 'nomeFilme' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:41:	Overridable method 'novo' called during object construction
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:47:	System.out.print is used
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:52:	System.out.print is used
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:69:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:70:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:80:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/CadastroSessoesBean.java:94:	Parameter 'sessao' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RecarregarMaquinaBean.java:15:	Avoid excessively long variable names like manutencacaoNegocio
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RecarregarMaquinaBean.java:15:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RecarregarMaquinaBean.java:15:	Private field 'manutencacaoNegocio' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RecarregarMaquinaBean.java:17:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RecarregarMaquinaBean.java:17:	Private field 'maquina' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RecarregarMaquinaBean.java:33:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RecarregarMaquinaBean.java:34:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RecarregarMaquinaBean.java:44:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RecarregarMaquinaBean.java:54:	Parameter 'qtdImpressoes' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:26:	Avoid excessively long variable names like manutencacaoNegocio
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:26:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:26:	Private field 'manutencacaoNegocio' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:28:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:30:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:36:	Found 'UR'-anomaly for variable 'pagamento' (lines '36'-'86').
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:37:	Found 'DD'-anomaly for variable 'inicio' (lines '37'-'46').
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:37:	Found 'DU'-anomaly for variable 'inicio' (lines '37'-'98').
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:38:	Found 'DD'-anomaly for variable 'fim' (lines '38'-'62').
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:38:	Found 'DU'-anomaly for variable 'fim' (lines '38'-'98').
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:40:	Avoid variables with short names like df
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:40:	Found 'DU'-anomaly for variable 'df' (lines '40'-'98').
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:40:	Local variable 'df' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:40:	When instantiating a SimpleDateFormat object, specify a Locale
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:42:	Found 'DD'-anomaly for variable 'datasValidas' (lines '42'-'56').
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:42:	Found 'DD'-anomaly for variable 'datasValidas' (lines '42'-'73').
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:44:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:48:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:49:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:50:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:56:	Found 'DD'-anomaly for variable 'datasValidas' (lines '56'-'73').
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:60:	Potential violation of Law of Demeter (method chain calls)
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:63:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:63:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:64:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:66:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:78:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:85:	Local variable 'pagamento' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:86:	Potential violation of Law of Demeter (object not created locally)
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:100:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:106:	Parameter 'dataFim' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/manutencao/RelatorioVendasBean.java:114:	Parameter 'dataInicio' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:25:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:25:	Private field 'cinemaNegocio' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:31:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:31:	Private field 'maquina' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:37:	Avoid excessively long variable names like tipoPagamentoEscolhido
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:39:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:39:	Private field 'tiposPagamentos' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:53:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:55:	Local variable 'cartaoCredito' could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:59:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:60:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:72:	System.out.print is used
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:73:	System.out.print is used
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:74:	System.out.print is used
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:76:	System.out.print is used
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:77:	System.out.print is used
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:84:	A method should have only one exit point, and that should be the last statement in the method
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:85:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:94:	Comment is too large: Line too long
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:100:	Parameter 'assentoEscolhido' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:108:	Parameter 'dinheiro' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:116:	Parameter 'ingresso' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:124:	Parameter 'pagamento' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:132:	Parameter 'sessaoEscolhida' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:140:	Avoid excessively long variable names like tipoPagamentoEscolhido
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PagamentoBean.java:140:	Parameter 'tipoPagamentoEscolhido' is not assigned and could be declared final
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PrincipalBean.java:13:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PrincipalBean.java:13:	Private field 'filmesEmExibicao' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PrincipalBean.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/PrincipalBean.java:14:	Private field 'filmeNegocio' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/SessoesBean.java:15:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/SessoesBean.java:15:	Private field 'cinemaNegocio' could be made final; it is only initialized in the declaration or constructor.
+src/br/ufma/mestrado/computacao/ps/cinema/visao/operacao/SessoesBean.java:21:	Parameter 'filmeEscolhido' is not assigned and could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:8:	No need to import a type that lives in the same package
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:10:	This class has too many methods, consider refactoring it.
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:14:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:17:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:24:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:27:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:34:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:37:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:44:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:49:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:56:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:59:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:66:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:69:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:69:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:76:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:80:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:80:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:87:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:94:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:94:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:101:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:107:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:113:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:119:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/DinheiroTest.java:125:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:8:	No need to import a type that lives in the same package
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:9:	No need to import a type that lives in the same package
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:11:	This class has too many methods, consider refactoring it.
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:15:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:18:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:25:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:28:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:35:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:38:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:45:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:50:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:57:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:60:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:67:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:70:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:70:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:77:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:81:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:81:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:88:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:95:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:95:	Local variable 'totalEsperado' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:102:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:112:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:122:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:134:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:142:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:145:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:153:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:156:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:166:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:169:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:179:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:182:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:190:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:193:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:203:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:206:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:216:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:219:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:227:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:230:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:240:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:243:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:253:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:256:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:264:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:267:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:277:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:280:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:290:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:293:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:301:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:304:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:314:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:317:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:327:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:330:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:340:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:343:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:353:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:356:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:366:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:369:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:379:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:382:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:392:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:397:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:411:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:418:	Local variable 'quantiaFornecida' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:422:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:422:	Local variable 'quantiaNecessaria' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:424:	Local variable 'troco' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:428:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:429:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:430:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:432:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:433:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:438:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:445:	Local variable 'quantiaFornecida' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:448:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:448:	Local variable 'quantiaNecessaria' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:450:	Local variable 'troco' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:454:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:455:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:456:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:461:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:467:	Local variable 'quantiaFornecida' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:470:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:470:	Local variable 'quantiaNecessaria' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:475:	Comment is too large: Line too long
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:479:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:485:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/MaquinaTest.java:491:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/SessaoTest.java:8:	No need to import a type that lives in the same package
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/SessaoTest.java:14:	Local variable 'dataInicio' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/SessaoTest.java:16:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/SessaoTest.java:18:	Local variable 'sessao' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/SessaoTest.java:19:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/SessaoTest.java:26:	Local variable 'dataInicio' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/SessaoTest.java:28:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/SessaoTest.java:30:	Local variable 'sessao' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/dominio/SessaoTest.java:31:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:19:	No need to import a type that lives in the same package
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:24:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:26:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:26:	Private field 'cinemaNegocio' could be made final; it is only initialized in the declaration or constructor.
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:28:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:32:	Potential violation of Law of Demeter (method chain calls)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:44:	A method/constructor shouldnt explicitly throw java.lang.Exception
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:45:	Local variable 'cartao' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:47:	Local variable 'assento' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:49:	Local variable 'sessao' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:52:	Local variable 'ingresso' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:53:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:55:	Local variable 'pagamento' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:58:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:62:	A method/constructor shouldnt explicitly throw java.lang.Exception
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:63:	Local variable 'cartao' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:65:	Local variable 'assento' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:67:	Local variable 'sessao' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:70:	Local variable 'ingresso' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:71:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:79:	A method/constructor shouldnt explicitly throw java.lang.Exception
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:80:	Local variable 'assento' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:82:	Local variable 'sessao' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:85:	Local variable 'ingresso' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:86:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:88:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:94:	Local variable 'pagamento' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:97:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:98:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:99:	Potential violation of Law of Demeter (method chain calls)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:99:	Potential violation of Law of Demeter (method chain calls)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:99:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:103:	A method/constructor shouldnt explicitly throw java.lang.Exception
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:104:	Local variable 'assento' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:106:	Local variable 'sessao' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:109:	Local variable 'ingresso' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:110:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:112:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:115:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:122:	A method/constructor shouldnt explicitly throw java.lang.Exception
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:123:	Local variable 'assento' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:125:	Local variable 'sessao' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:128:	Local variable 'ingresso' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:131:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:134:	Local variable 'maquina' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:141:	A method/constructor shouldnt explicitly throw java.lang.Exception
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:142:	Local variable 'assento' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:144:	Local variable 'sessao' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:147:	Local variable 'ingresso' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:148:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:150:	Local variable 'dinheiro' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:163:	Local variable 'tipos' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:164:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/CinemaNegocioTest.java:164:	Substitute calls to size() == 0 (or size() != 0) with calls to isEmpty()
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:20:	Avoid excessively long variable names like manutencacaoNegocio
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:20:	Private field 'manutencacaoNegocio' could be made final; it is only initialized in the declaration or constructor.
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:29:	Potential violation of Law of Demeter (method chain calls)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:29:	Potential violation of Law of Demeter (method chain calls)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:33:	Local variable 'sala' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:40:	Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:45:	Found 'UR'-anomaly for variable 'pagamento' (lines '45'-'55').
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:45:	JUnit tests should include assert() or fail()
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:46:	Local variable 'dataInicio' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:47:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:49:	Local variable 'dataFim' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:50:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:52:	Local variable 'pagamentos' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:54:	Local variable 'pagamento' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:55:	System.out.print is used
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:61:	Local variable 'amanha' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:62:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:63:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:71:	Local variable 'ontem' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:72:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:73:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:79:	Local variable 'inicio' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:80:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:81:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:82:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:84:	Local variable 'fim' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:85:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:86:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:87:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:96:	Local variable 'inicio' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:97:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:98:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:99:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:101:	Local variable 'fim' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:102:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:103:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:104:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:111:	Local variable 'inicio' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:112:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:113:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:114:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:116:	Local variable 'fim' could be declared final
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:117:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:118:	Potential violation of Law of Demeter (object not created locally)
+test/br/ufma/mestrado/computacao/ps/cinema/negocio/ManutencacaoNegocioTest.java:119:	Potential violation of Law of Demeter (object not created locally)

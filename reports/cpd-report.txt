@@ -1,0 +1,772 @@
+Found a 12 line (89 tokens) duplication in the following files: 
+Starting at line 285 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Maquina.java
+Starting at line 19 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Dinheiro.java
+
+	public BigDecimal getTotalEmReais() {
+		BigDecimal total = BigDecimal.ZERO;
+
+		total = total.add(new BigDecimal(qtdCedulas50 * 50));
+		total = total.add(new BigDecimal(qtdCedulas10 * 10));
+		total = total.add(new BigDecimal(qtdCedulas5 * 5));
+
+		total = total.add(new BigDecimal(qtdMoedas1Real * 1));
+		total = total.add(new BigDecimal(((double) qtdMoedas50Centavos * 50) / 100));
+
+		return total;
+	}
+=====================================================================
+Found a 14 line (82 tokens) duplication in the following files: 
+Starting at line 79 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 141 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+
+	public void pagarIngressoComDinheiro() throws Exception {
+		Assento assento = new Assento();
+		assento.setId(1);
+		Sessao sessao = new Sessao();
+		sessao.setId(1);
+
+		Ingresso ingresso = new Ingresso(assento, sessao);
+		ingresso.setPreco(new BigDecimal(27.50));
+
+		Dinheiro dinheiro = new Dinheiro();
+		dinheiro.setQtdCedulas10(2);
+		dinheiro.setQtdCedulas5(1);
+		dinheiro.setQtdMoedas1Real(2);
+		dinheiro.setQtdMoedas50Centavos(1);
+=====================================================================
+Found a 11 line (62 tokens) duplication in the following files: 
+Starting at line 79 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 103 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 141 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+
+	public void pagarIngressoComDinheiro() throws Exception {
+		Assento assento = new Assento();
+		assento.setId(1);
+		Sessao sessao = new Sessao();
+		sessao.setId(1);
+
+		Ingresso ingresso = new Ingresso(assento, sessao);
+		ingresso.setPreco(new BigDecimal(27.50));
+
+		Dinheiro dinheiro = new Dinheiro();
+		dinheiro.setQtdCedulas10(2);
+=====================================================================
+Found a 10 line (55 tokens) duplication in the following files: 
+Starting at line 44 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 62 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+
+	public void pagarIngressoComCartao() throws Exception {
+		String cartao = "123456";
+
+		Assento assento = new Assento();
+		assento.setId(1);
+		Sessao sessao = new Sessao();
+		sessao.setId(1);
+
+		Ingresso ingresso = new Ingresso(assento, sessao);
+		ingresso.setPreco(new BigDecimal(27.50));
+=====================================================================
+Found a 10 line (53 tokens) duplication in the following files: 
+Starting at line 410 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+Starting at line 437 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+
+	public void testarColocarDinheiroQuandoNaoPrecisaDeTroco() throws Exception {
+		Maquina maquina = new Maquina();
+		maquina.setQtdCedulas50(2);
+		maquina.setQtdCedulas10(1);
+		maquina.setQtdCedulas5(3);
+		maquina.setQtdMoedas1Real(5);
+		maquina.setQtdMoedas50Centavos(7);
+
+		Dinheiro quantiaFornecida = new Dinheiro();
+		quantiaFornecida.setQtdCedulas10(2);
+=====================================================================
+Found a 11 line (49 tokens) duplication in the following files: 
+Starting at line 61 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+Starting at line 108 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocio.java
+
+	}
+
+	public Maquina recuperarMaquina(int id) {
+		Session session = HibernateUtil.getInstance().getSession();
+		MaquinaDAO maquinaDAO = new MaquinaDAO(session);
+		Maquina maquina = maquinaDAO.recuperar(id);
+		session.close();
+		return maquina;
+	}
+
+	public List<Pagamento> recuperarPagamentos(Calendar dataInicio, Calendar dataFim) {
+=====================================================================
+Found a 8 line (48 tokens) duplication in the following files: 
+Starting at line 79 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 103 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 122 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 141 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+
+	public void pagarIngressoComDinheiro() throws Exception {
+		Assento assento = new Assento();
+		assento.setId(1);
+		Sessao sessao = new Sessao();
+		sessao.setId(1);
+
+		Ingresso ingresso = new Ingresso(assento, sessao);
+		ingresso.setPreco(new BigDecimal(27.50));
+=====================================================================
+Found a 19 line (48 tokens) duplication in the following files: 
+Starting at line 84 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sala.java
+Starting at line 121 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Filme.java
+
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getQuantidadeAssentos() {
+=====================================================================
+Found a 7 line (46 tokens) duplication in the following files: 
+Starting at line 47 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 65 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 80 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 104 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 142 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+
+		Assento assento = new Assento();
+		assento.setId(1);
+		Sessao sessao = new Sessao();
+		sessao.setId(1);
+
+		Ingresso ingresso = new Ingresso(assento, sessao);
+		ingresso.setPreco(new BigDecimal(27.50));
+=====================================================================
+Found a 12 line (46 tokens) duplication in the following files: 
+Starting at line 57 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\operacao\PagamentoBean.java
+Starting at line 82 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\operacao\PagamentoBean.java
+
+				cinemaNegocio.pagarIngressoComCartao(maquina, "", ingresso, cartaoCredito);
+
+				return "ingresso";
+			} catch (Exception e) {
+				FacesContext.getCurrentInstance().addMessage(
+						null,
+						new FacesMessage(FacesMessage.SEVERITY_ERROR, "Não foi possível realizar o pagamento. Causa: "
+								+ e.getMessage(), e.getMessage()));
+
+				return "";
+			}
+		}
+=====================================================================
+Found a 15 line (44 tokens) duplication in the following files: 
+Starting at line 59 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sessao.java
+Starting at line 58 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Filme.java
+
+		Sessao other = (Sessao) obj;
+		if (id != other.id)
+			return false;
+		return true;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+		return result;
+	}
+
+	public boolean naoIniciou() {
+=====================================================================
+Found a 7 line (43 tokens) duplication in the following files: 
+Starting at line 47 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 65 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 123 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+
+		Assento assento = new Assento();
+		assento.setId(1);
+		Sessao sessao = new Sessao();
+		sessao.setId(1);
+
+		Ingresso ingresso = new Ingresso(assento, sessao);
+		ingresso.setPreco(new BigDecimal(27.50));
+=====================================================================
+Found a 17 line (43 tokens) duplication in the following files: 
+Starting at line 54 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\TipoPagamento.java
+Starting at line 59 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sessao.java
+Starting at line 57 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Pagamento.java
+Starting at line 164 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Maquina.java
+Starting at line 57 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Ingresso.java
+Starting at line 58 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Filme.java
+Starting at line 54 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Assento.java
+
+		TipoPagamento other = (TipoPagamento) obj;
+		if (id != other.id)
+			return false;
+		return true;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+		return result;
+	}
+
+	/* ################################################ Gets e Sets ################################################# */
+
+	public String getDescricao() {
+=====================================================================
+Found a 13 line (42 tokens) duplication in the following files: 
+Starting at line 54 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\TipoPagamento.java
+Starting at line 59 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sessao.java
+Starting at line 57 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sala.java
+Starting at line 57 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Pagamento.java
+Starting at line 164 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Maquina.java
+Starting at line 57 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Ingresso.java
+Starting at line 58 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Filme.java
+Starting at line 54 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Assento.java
+
+		TipoPagamento other = (TipoPagamento) obj;
+		if (id != other.id)
+			return false;
+		return true;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+		return result;
+	}
+=====================================================================
+Found a 12 line (41 tokens) duplication in the following files: 
+Starting at line 42 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\TipoPagamento.java
+Starting at line 45 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sala.java
+Starting at line 154 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Maquina.java
+Starting at line 45 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Ingresso.java
+Starting at line 42 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Assento.java
+
+	}
+
+	/* ############################################### Outros Métodos ############################################### */
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+=====================================================================
+Found a 8 line (40 tokens) duplication in the following files: 
+Starting at line 23 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+Starting at line 43 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+
+	public void abrirCaixa(Maquina maquina, Dinheiro dinheiro) throws Exception {
+		Session session = HibernateUtil.getInstance().getSession();
+		MaquinaDAO maquinaDAO = new MaquinaDAO(session);
+
+		org.hibernate.Transaction tx = session.beginTransaction();
+
+		try {
+			maquina.colocarDinheiro(dinheiro);
+=====================================================================
+Found a 8 line (40 tokens) duplication in the following files: 
+Starting at line 46 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\TipoPagamento.java
+Starting at line 51 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sessao.java
+Starting at line 49 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sala.java
+Starting at line 49 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Pagamento.java
+Starting at line 156 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Maquina.java
+Starting at line 49 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Ingresso.java
+Starting at line 50 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Filme.java
+Starting at line 46 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Assento.java
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+=====================================================================
+Found a 6 line (38 tokens) duplication in the following files: 
+Starting at line 80 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocioTest.java
+Starting at line 97 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocioTest.java
+
+		inicio.add(Calendar.HOUR_OF_DAY, 1);
+		inicio.add(Calendar.MINUTE, 30);
+		sessao.setInicio(inicio.getTime());
+
+		Calendar fim = Calendar.getInstance();
+		fim.add(Calendar.HOUR_OF_DAY, 2);
+=====================================================================
+Found a 6 line (37 tokens) duplication in the following files: 
+Starting at line 80 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocioTest.java
+Starting at line 97 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocioTest.java
+Starting at line 112 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocioTest.java
+
+		inicio.add(Calendar.HOUR_OF_DAY, 1);
+		inicio.add(Calendar.MINUTE, 30);
+		sessao.setInicio(inicio.getTime());
+
+		Calendar fim = Calendar.getInstance();
+		fim.add(Calendar.HOUR_OF_DAY, 2);
+=====================================================================
+Found a 14 line (37 tokens) duplication in the following files: 
+Starting at line 30 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+Starting at line 50 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+
+			maquina.colocarDinheiro(dinheiro);
+
+			maquinaDAO.salvar(maquina);
+
+			tx.commit();
+		} catch (Exception e) {
+			tx.rollback();
+			throw e;
+		} finally {
+			session.close();
+		}
+	}
+
+	public void recarregarMaquina(Maquina maquina, int qtdImpressoes) throws Exception {
+=====================================================================
+Found a 10 line (36 tokens) duplication in the following files: 
+Starting at line 113 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+Starting at line 132 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocioTest.java
+
+		dinheiro.setQtdCedulas10(3);
+
+		Maquina maquina = new Maquina();
+		maquina.setId(1);
+
+		cinemaNegocio.pagarIngressoComDinheiro(maquina, ingresso, dinheiro);
+	}
+
+	@Test(expected = Exception.class)
+	public void pagarIngressoComDinheiroInsuficiente() throws Exception {
+=====================================================================
+Found a 6 line (36 tokens) duplication in the following files: 
+Starting at line 410 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+Starting at line 437 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+Starting at line 460 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+
+	public void testarColocarDinheiroQuandoNaoPrecisaDeTroco() throws Exception {
+		Maquina maquina = new Maquina();
+		maquina.setQtdCedulas50(2);
+		maquina.setQtdCedulas10(1);
+		maquina.setQtdCedulas5(3);
+		maquina.setQtdMoedas1Real(5);
+=====================================================================
+Found a 10 line (34 tokens) duplication in the following files: 
+Starting at line 43 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\manutencao\CadastroSessoesBean.java
+Starting at line 25 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\manutencao\CadastroFilmesBean.java
+
+		salasCadastradas = manutencacaoNegocio.recuperarTodasAsSalas();
+	}
+
+	public String editar() {
+		System.out.println("Editar");
+		return "";
+	}
+
+	public String novo() {
+		System.out.println("Novo");
+=====================================================================
+Found a 7 line (32 tokens) duplication in the following files: 
+Starting at line 67 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\manutencao\CadastroSessoesBean.java
+Starting at line 45 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\manutencao\CadastroFilmesBean.java
+
+					new FacesMessage(FacesMessage.SEVERITY_INFO, "Sessão salva com sucesso.", ""));
+
+			return novo();
+		} catch (Exception e) {
+			FacesContext.getCurrentInstance().addMessage(
+					null,
+					new FacesMessage(FacesMessage.SEVERITY_ERROR, "Não foi possível salvar a sessão. Causa: "
+=====================================================================
+Found a 12 line (32 tokens) duplication in the following files: 
+Starting at line 32 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+Starting at line 114 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+
+			maquinaDAO.salvar(maquina);
+
+			tx.commit();
+		} catch (Exception e) {
+			tx.rollback();
+			throw e;
+		} finally {
+			session.close();
+		}
+	}
+
+	public void recarregarMaquina(Maquina maquina, int qtdImpressoes) throws Exception {
+=====================================================================
+Found a 9 line (32 tokens) duplication in the following files: 
+Starting at line 22 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sala.java
+Starting at line 34 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Filme.java
+
+	@Id
+	@Column(name = "ID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+
+	@Column(name = "NOME")
+	private String nome;
+
+	@Column(name = "QTD_ASSENTOS")
+=====================================================================
+Found a 12 line (31 tokens) duplication in the following files: 
+Starting at line 32 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+Starting at line 64 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocio.java
+
+			maquinaDAO.salvar(maquina);
+
+			tx.commit();
+		} catch (Exception e) {
+			tx.rollback();
+			throw e;
+		} finally {
+			session.close();
+		}
+	}
+
+	public void recarregarMaquina(Maquina maquina, int qtdImpressoes) throws Exception {
+=====================================================================
+Found a 12 line (31 tokens) duplication in the following files: 
+Starting at line 52 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+Starting at line 114 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+
+			maquinaDAO.salvar(maquina);
+
+			tx.commit();
+		} catch (Exception e) {
+			tx.rollback();
+			throw e;
+		} finally {
+			session.close();
+		}
+	}
+
+	public Maquina recuperarMaquina(int id) {
+=====================================================================
+Found a 6 line (31 tokens) duplication in the following files: 
+Starting at line 75 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocio.java
+Starting at line 89 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocio.java
+
+	public Pagamento pagarIngressoComCartao(Maquina maquina, String cartao, Ingresso ingresso, boolean cartaoCredito)
+			throws Exception {
+		Pagamento pagamento = new Pagamento();
+		pagamento.setData(Calendar.getInstance());
+		pagamento.setIngresso(ingresso);
+		pagamento.setTipo(cartaoCredito ? new TipoPagamento(TipoPagamento.CARTAO_CREDITO) : new TipoPagamento(
+=====================================================================
+Found a 13 line (31 tokens) duplication in the following files: 
+Starting at line 76 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sessao.java
+Starting at line 74 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sala.java
+
+	}
+
+	/* ################################################ Gets e Sets ################################################# */
+
+	public List<Assento> getAssentos() {
+		return assentos;
+	}
+
+	public void setAssentos(List<Assento> assentos) {
+		this.assentos = assentos;
+	}
+
+	public Filme getFilme() {
+=====================================================================
+Found a 7 line (30 tokens) duplication in the following files: 
+Starting at line 31 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\manutencao\RecarregarMaquinaBean.java
+Starting at line 33 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\manutencao\AberturaCaixaBean.java
+
+					new FacesMessage(FacesMessage.SEVERITY_INFO, "Máquina recarregada com sucesso.", ""));
+
+			return "inicio";
+		} catch (Exception e) {
+			FacesContext.getCurrentInstance().addMessage(
+					null,
+					new FacesMessage(FacesMessage.SEVERITY_ERROR, "Não foi possível recarregar a máquina. Causa: "
+=====================================================================
+Found a 10 line (30 tokens) duplication in the following files: 
+Starting at line 32 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+Starting at line 52 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+Starting at line 114 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+Starting at line 136 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocio.java
+Starting at line 64 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\negocio\CinemaNegocio.java
+
+			maquinaDAO.salvar(maquina);
+
+			tx.commit();
+		} catch (Exception e) {
+			tx.rollback();
+			throw e;
+		} finally {
+			session.close();
+		}
+	}
+=====================================================================
+Found a 6 line (29 tokens) duplication in the following files: 
+Starting at line 102 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocioTest.java
+Starting at line 117 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocioTest.java
+
+		fim.add(Calendar.HOUR_OF_DAY, 1);
+		fim.add(Calendar.MINUTE, 20);
+		sessao.setFim(fim.getTime());
+
+		manutencacaoNegocio.salvar(sessao);
+	}
+=====================================================================
+Found a 6 line (29 tokens) duplication in the following files: 
+Starting at line 141 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+Starting at line 152 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+
+	public void testarRetiradaDeDinheiroComQuantidadeNotasDe50ReaisInsuficiente() throws Exception {
+		Maquina maquina = new Maquina();
+		maquina.setQtdCedulas50(2);
+
+		Dinheiro dinheiro = new Dinheiro();
+		dinheiro.setQtdCedulas50(3);
+=====================================================================
+Found a 6 line (29 tokens) duplication in the following files: 
+Starting at line 178 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+Starting at line 189 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+
+	public void testarRetiradaDeDinheiroComQuantidadeNotasDe10ReaisInsuficiente() throws Exception {
+		Maquina maquina = new Maquina();
+		maquina.setQtdCedulas10(1);
+
+		Dinheiro dinheiro = new Dinheiro();
+		dinheiro.setQtdCedulas10(5);
+=====================================================================
+Found a 5 line (28 tokens) duplication in the following files: 
+Starting at line 44 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+Starting at line 87 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+
+	public void testarTotalEmReaisComCedulasDiversas() {
+		Maquina maquina = new Maquina();
+		maquina.setQtdCedulas50(2);
+		maquina.setQtdCedulas10(3);
+		maquina.setQtdCedulas5(1);
+=====================================================================
+Found a 9 line (28 tokens) duplication in the following files: 
+Starting at line 420 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+Starting at line 446 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+
+		quantiaFornecida.setQtdMoedas50Centavos(3);
+
+		BigDecimal quantiaNecessaria = new BigDecimal(21.50);
+
+		Dinheiro troco = maquina.colocarDinheiro(quantiaFornecida, quantiaNecessaria);
+
+		// Verificando o valor do troco
+
+		Assert.assertTrue(troco.getQtdCedulas50() == 0);
+=====================================================================
+Found a 5 line (28 tokens) duplication in the following files: 
+Starting at line 43 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\DinheiroTest.java
+Starting at line 86 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\DinheiroTest.java
+
+	public void testarValorEmReaisComCedulasDiversas() {
+		Dinheiro dinheiro = new Dinheiro();
+		dinheiro.setQtdCedulas50(2);
+		dinheiro.setQtdCedulas10(3);
+		dinheiro.setQtdCedulas5(1);
+=====================================================================
+Found a 13 line (28 tokens) duplication in the following files: 
+Starting at line 74 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\manutencao\CadastroSessoesBean.java
+Starting at line 52 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\manutencao\CadastroFilmesBean.java
+
+							+ e.getMessage(), e.getMessage()));
+
+			return "";
+		}
+	}
+
+	/* ################################################ Gets e Sets ################################################# */
+
+	public Filme getFilme() {
+		return filme;
+	}
+
+	public List<Sala> getSalasCadastradas() {
+=====================================================================
+Found a 5 line (27 tokens) duplication in the following files: 
+Starting at line 85 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocioTest.java
+Starting at line 102 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocioTest.java
+Starting at line 117 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\negocio\ManutencacaoNegocioTest.java
+
+		fim.add(Calendar.HOUR_OF_DAY, 2);
+		fim.add(Calendar.MINUTE, 20);
+		sessao.setFim(fim.getTime());
+
+		manutencacaoNegocio.salvar(sessao);
+=====================================================================
+Found a 6 line (27 tokens) duplication in the following files: 
+Starting at line 252 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+Starting at line 263 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+
+	public void testarRetiradaDeDinheiroComQuantidadeMoedasDe1RealInsuficiente() throws Exception {
+		Maquina maquina = new Maquina();
+		maquina.setQtdMoedas1Real(7);
+
+		Dinheiro dinheiro = new Dinheiro();
+		dinheiro.setQtdCedulas5(6);
+=====================================================================
+Found a 8 line (27 tokens) duplication in the following files: 
+Starting at line 18 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Maquina.java
+Starting at line 14 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Assento.java
+
+public final class Maquina {
+
+	@Id
+	@Column(name = "ID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+
+	@Column(name = "QTD_CEDULAS_5_REAIS")
+=====================================================================
+Found a 6 line (26 tokens) duplication in the following files: 
+Starting at line 22 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sala.java
+Starting at line 20 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Maquina.java
+Starting at line 22 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Ingresso.java
+Starting at line 34 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Filme.java
+Starting at line 16 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Assento.java
+
+	@Id
+	@Column(name = "ID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+
+	@Column(name = "NOME")
+=====================================================================
+Found a 13 line (26 tokens) duplication in the following files: 
+Starting at line 225 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Maquina.java
+Starting at line 66 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Assento.java
+
+	}
+
+	/* ################################################ Gets e Sets ################################################# */
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getQtdCedulas5() {
+=====================================================================
+Found a 10 line (25 tokens) duplication in the following files: 
+Starting at line 254 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+Starting at line 291 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\test\br\ufma\mestrado\computacao\ps\cinema\dominio\MaquinaTest.java
+
+		maquina.setQtdMoedas1Real(7);
+
+		Dinheiro dinheiro = new Dinheiro();
+		dinheiro.setQtdCedulas5(6);
+
+		maquina.retirarDinheiro(dinheiro);
+	}
+
+	@Test
+	public void testarRetiradaDeDinheiroComQuantidadeMoedasDe1RealSuficiente() throws Exception {
+=====================================================================
+Found a 11 line (25 tokens) duplication in the following files: 
+Starting at line 110 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\operacao\PagamentoBean.java
+Starting at line 87 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Pagamento.java
+
+	}
+
+	public Ingresso getIngresso() {
+		return ingresso;
+	}
+
+	public void setIngresso(Ingresso ingresso) {
+		this.ingresso = ingresso;
+	}
+
+	public Pagamento getPagamento() {
+=====================================================================
+Found a 5 line (25 tokens) duplication in the following files: 
+Starting at line 50 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\manutencao\RelatorioVendasBean.java
+Starting at line 66 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\manutencao\RelatorioVendasBean.java
+
+				inicio.set(Calendar.SECOND, 0);
+			} catch (ParseException e) {
+				FacesContext.getCurrentInstance().addMessage(
+						null,
+						new FacesMessage(FacesMessage.SEVERITY_ERROR, "Data de início inválida.",
+=====================================================================
+Found a 13 line (25 tokens) duplication in the following files: 
+Starting at line 56 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\visao\manutencao\CadastroFilmesBean.java
+Starting at line 86 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sessao.java
+
+	}
+
+	/* ################################################ Gets e Sets ################################################# */
+
+	public Filme getFilme() {
+		return filme;
+	}
+
+	public void setFilme(Filme filme) {
+		this.filme = filme;
+	}
+
+	public List<Filme> getFilmesCadastrados() {
+=====================================================================
+Found a 11 line (25 tokens) duplication in the following files: 
+Starting at line 102 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sessao.java
+Starting at line 84 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sala.java
+Starting at line 79 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Pagamento.java
+Starting at line 225 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Maquina.java
+Starting at line 79 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Ingresso.java
+Starting at line 121 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Filme.java
+Starting at line 66 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Assento.java
+
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Date getInicio() {
+=====================================================================
+Found a 10 line (25 tokens) duplication in the following files: 
+Starting at line 130 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Sessao.java
+Starting at line 100 of C:\Users\Rayrone\Documents\workspaces\workspace_ufma_mestrado\ProjetoSoftware\src\br\ufma\mestrado\computacao\ps\cinema\dominio\Assento.java
+
+	}
+
+	public Sala getSala() {
+		return sala;
+	}
+
+	public void setSala(Sala sala) {
+		this.sala = sala;
+	}
+}

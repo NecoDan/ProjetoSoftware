@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<ui:composition template="/paginas/master.xhtml">		
+		<ui:define name="containerPrincipal">
+			<div class="jumbotron">
+	      		<div class="container">
+	        		<h3>Bem Vindo Administrador!</h3>
+	      		</div>
+	    	</div>
+		
+    		<div class="starter-template">
+    			<ul class="nav nav-pills nav-justified">
+        			<li>
+        				<h:commandLink action="cadastroFilmes" immediate="true">
+        					<h:graphicImage alt="48x48" library="img" name="cinema.png" style="width: 48px; height: 48px;" styleClass="img-thumbnail" />
+        					Cadastro de Filme
+        				</h:commandLink>
+        			</li>
+        			<li>
+        				<h:commandLink action="aberturaCaixa" immediate="true">
+        					<h:graphicImage alt="48x48" library="img" name="caixa.png" style="width: 48px; height: 48px;" styleClass="img-thumbnail" />
+        					Abertura do Caixa
+        				</h:commandLink>
+        			</li>
+        			<li>
+        				<h:commandLink action="relatorioVendas" immediate="true">
+        					<h:graphicImage alt="48x48" library="img" name="relatorio.png" style="width: 48px; height: 48px;" styleClass="img-thumbnail" />
+        					Relatório de Vendas
+        				</h:commandLink>
+        			</li>
+        			<li>
+        				<h:commandLink action="recarregarMaquina" immediate="true">
+        					<h:graphicImage alt="48x48" library="img" name="papel.png" style="width: 48px; height: 48px;" styleClass="img-thumbnail" />
+        					Recarregar Máquina de Ingressos
+        				</h:commandLink>
+        			</li>
+      			</ul>
+    		</div>
+    		
+    		<br/>
+    		
+    		<div class="container">
+    			<div class="row">
+					<div class="col-lg-12">
+						<h:messages errorClass="alert alert-danger" fatalClass="alert alert-danger" warnClass="alert alert-warning" infoClass="alert alert-info" />
+					</div>
+				</div>
+    		</div>
+    		
+		</ui:define>
+		
+		<ui:define name="containerSecondary">
+			<ui:insert name="containerSecondary"></ui:insert>
+		</ui:define>
+	</ui:composition>
+</html>
