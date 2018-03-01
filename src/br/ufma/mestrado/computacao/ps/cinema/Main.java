@@ -10,7 +10,8 @@ public class Main {
 
 		// Abre sessão com o Hibernate
 		Session session = HibernateUtil.getInstance().getSession();
-
+		
+		// teste do github
 		// Transaction tx = session.beginTransaction();
 
 		// TipoPagamento dinheiro = new TipoPagamento("DINHEIRO");
