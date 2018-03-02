@@ -16,7 +16,7 @@
 				</excludes>
 			</resource>
 		</resources>
-		<plugins>
+		<plugins>		
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
@@ -32,26 +32,6 @@
 					<warSourceDirectory>webapp</warSourceDirectory>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
-			</plugin>
-				<!-- PLUGIN EXTRA - JaCoco JENKINS -->
-			<plugin>
-				<groupId>org.jacoco</groupId>
-				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>${jacoco.version}</version>
-<!-- 				<executions> -->
-<!-- 					<execution> -->
-<!-- 						<goals> -->
-<!-- 							<goal>prepare-agent</goal> -->
-<!-- 						</goals> -->
-<!-- 					</execution> -->
-<!-- 					<execution> -->
-<!-- 						<id>report</id> -->
-<!-- 						<phase>prepare-package</phase> -->
-<!-- 						<goals> -->
-<!-- 							<goal>report</goal> -->
-<!-- 						</goals> -->
-<!-- 					</execution> -->
-<!-- 				</executions> -->
 			</plugin>
 		</plugins>
 	</build>
